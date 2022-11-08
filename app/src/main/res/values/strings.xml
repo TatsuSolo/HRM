@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HRM</string>
+    <string name="login_page">Login</string>
+    <string name="login_page_message">Please login to continue</string>
+    <string name="login_page_ID">ID</string>
+    <string name="login_page_pass">Password</string>
+</resources>
