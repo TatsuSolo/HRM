@@ -52,36 +52,45 @@
                 android:layout_height="wrap_content"
                 app:endIconMode="clear_text"
                 android:layout_margin="5dp"
-
                 android:orientation="vertical"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="@color/txt_color_grey"
+                app:boxStrokeWidth="2dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/login_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:drawableStart="@drawable/ic_id"
                     android:drawablePadding="10dp"
                     android:hint="@string/login_page_ID"
-                    android:layout_gravity="center_horizontal"
-                    app:hintTextColor="@color/txt_color_grey"/>
+                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 app:endIconMode="password_toggle"
                 android:orientation="vertical"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:textColorHint="@color/txt_color_grey"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidth="2dp">
+
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/login_pass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
+                    android:layout_gravity="center_horizontal"
                     android:drawableStart="@drawable/ic_password"
                     android:drawablePadding="10dp"
                     android:hint="@string/login_page_pass"
-                    android:layout_gravity="center_horizontal"
-                    app:hintTextColor="@color/txt_color_grey"/>
+                    android:inputType="textPassword"
+                    app:hintTextColor="@color/black" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -90,8 +99,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:drawableRight="@drawable/login_arrow"
                 android:drawablePadding="5dp"
