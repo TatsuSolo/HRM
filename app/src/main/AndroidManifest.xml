@@ -29,6 +29,8 @@
         </activity>
         <activity
             android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbarTheme"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
