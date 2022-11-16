@@ -60,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ee_name"
                     android:layout_width="0dp"
                     android:padding="10dp"
                     android:layout_marginStart="10dp"
@@ -68,6 +69,7 @@
                     android:textSize="15sp"
                     android:hint="Name"/>
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ee_id"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -109,19 +111,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ee_date"
                     android:layout_width="0dp"
-                    android:padding="10dp"
-                    android:layout_marginStart="10dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="1"
-                    android:textSize="15sp"
-                    android:hint="Select Date"
-                    android:cursorVisible="false"
                     android:clickable="false"
+                    android:cursorVisible="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
-                    android:inputType="date"/>
+                    android:hint="Select Date"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -131,6 +136,7 @@
                     app:boxStrokeWidth="1dp"
                     >
                     <AutoCompleteTextView
+                        android:id="@+id/ee_drop__down"
                         android:padding="10dp"
                         android:layout_marginStart="10dp"
                         android:layout_width="match_parent"
@@ -171,12 +177,14 @@
                     app:boxStrokeWidth="1.5dp"
                     >
                     <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ee_reason"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:layout_margin="5dp"
                         android:layout_marginEnd="20dp"
                         android:padding="5dp"/>
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/ee_apply"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -194,6 +202,10 @@
 
 
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:padding="10dp"
@@ -201,7 +213,6 @@
                 android:layout_height="wrap_content"
                 android:text="White Services Technology"
                 android:gravity="center"
-                android:layout_marginTop="220sp"
                 android:layout_gravity="center"
                 android:textColor="@color/txt_color_grey"
                 />

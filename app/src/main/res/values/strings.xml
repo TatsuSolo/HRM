@@ -4,4 +4,11 @@
     <string name="login_page_message">Please login to continue</string>
     <string name="login_page_ID">ID</string>
     <string name="login_page_pass">Password</string>
+
+    <string-array name="all_types">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>CPP</item>
+    </string-array>
 </resources>
