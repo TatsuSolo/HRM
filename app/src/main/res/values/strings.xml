@@ -6,9 +6,7 @@
     <string name="login_page_pass">Password</string>
 
     <string-array name="all_types">
-        <item>Java</item>
-        <item>Kotlin</item>
-        <item>Python</item>
-        <item>CPP</item>
+        <item>Full-Day</item>
+        <item>Half-Day</item>
     </string-array>
 </resources>
