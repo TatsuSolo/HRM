@@ -17,24 +17,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_custom"
+        app:layout_constraintEnd_toEndOf="@id/recyclerView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Authorization"
+        app:titleMarginStart="20dp"
+        app:titleTextColor="#280000" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
         android:layout_width="0dp"
         android:layout_height="412dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         tools:listitem="@layout/card_design" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_accept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="76dp"
         android:background="@drawable/custom_button"
         android:text="Approve"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,8 +55,8 @@
         android:id="@+id/btn_discard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="95dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="76dp"
         android:background="@drawable/custom_button"
         android:text="Discard"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,8 +66,8 @@
         android:id="@+id/tv_auth_reason"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="176dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="168dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
@@ -104,5 +115,18 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tv_auth_id"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="White Services Technologies"
+        android:textColor="@color/txt_color_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
